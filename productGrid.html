@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    #product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-image {
+      max-width: 100%;
+      height: 300px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .product-details {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .product-description {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .product-price {
+      font-size: 16px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div id="product-grid">
+  <div class="product-card">
+    <img class="product-image" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71WiPi3a4nL._AC_UF1000,1000_QL80_.jpg" alt="Product 1">
+    <div class="product-details">
+      <div class="product-title">Realme</div>
+      <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="product-price">Rs.20,0000</div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img class="product-image" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71YoqE7ZJrL._AC_UF1000,1000_QL80_.jpg" alt="Product 2">
+    <div class="product-details">
+      <div class="product-title">Nothing Phone 2</div>
+      <div class="product-description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <div class="product-price">Rs.32000</div>
+    </div>
+  </div>
+  <div class="product-card">
+    <img class="product-image" src="https://img.etimg.com/thumb/width-640,height-480,imgsize-16920,resizemode-75,msid-99384323/news/new-updates/google-pixel-7a-rumoured-launch-date-leaked-check-design-colour-options.jpg" alt="Product 1">
+    <div class="product-details">
+      <div class="product-title">Google Pixel 7a</div>
+      <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="product-price">Rs.1,20,0000</div>
+    </div>
+  </div>
+
+    <div class="product-card">
+    <img class="product-image" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71WiPi3a4nL._AC_UF1000,1000_QL80_.jpg" alt="Product 1">
+    <div class="product-details">
+      <div class="product-title">Redme note 11 pro</div>
+      <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="product-price">Rs.20,0000</div>
+    </div>
+  </div>
+
+
+  <div class="product-card">
+    <img class="product-image" src="https://img.etimg.com/thumb/width-640,height-480,imgsize-16920,resizemode-75,msid-99384323/news/new-updates/google-pixel-7a-rumoured-launch-date-leaked-check-design-colour-options.jpg" alt="Product 1">
+    <div class="product-details">
+      <div class="product-title">Google Pixel 7a</div>
+      <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="product-price">Rs.1,20,0000</div>
+    </div>
+  </div>
+
+    <div class="product-card">
+    <img class="product-image" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71WiPi3a4nL._AC_UF1000,1000_QL80_.jpg" alt="Product 1">
+    <div class="product-details">
+      <div class="product-title">Redme note 11 pro</div>
+      <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="product-price">Rs.20,0000</div>
+    </div>
+  </div>
+  
+  <div class="product-card">
+    <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2NAovtxLxwHlDMTFoyz5kTcXfcXTpEqqmg&usqp=CAU" alt="Product 2">
+    <div class="product-details">
+      <div class="product-title">Redme note 12 pro</div>
+      <div class="product-description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <div class="product-price">Rs.12000</div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img class="product-image" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71YoqE7ZJrL._AC_UF1000,1000_QL80_.jpg" alt="Product 2">
+    <div class="product-details">
+      <div class="product-title">Nothing Phone 2</div>
+      <div class="product-description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <div class="product-price">Rs.32000</div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2NAovtxLxwHlDMTFoyz5kTcXfcXTpEqqmg&usqp=CAU" alt="Product 2">
+    <div class="product-details">
+      <div class="product-title">Redme note 12 pro</div>
+      <div class="product-description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <div class="product-price">Rs.12000</div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img class="product-image" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71WiPi3a4nL._AC_UF1000,1000_QL80_.jpg" alt="Product 1">
+    <div class="product-details">
+      <div class="product-title">Redme note 11 pro</div>
+      <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="product-price">Rs.20,0000</div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img class="product-image" src="https://img.etimg.com/thumb/width-640,height-480,imgsize-16920,resizemode-75,msid-99384323/news/new-updates/google-pixel-7a-rumoured-launch-date-leaked-check-design-colour-options.jpg" alt="Product 1">
+    <div class="product-details">
+      <div class="product-title">Google Pixel 7a</div>
+      <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="product-price">Rs.1,20,0000</div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img class="product-image" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71YoqE7ZJrL._AC_UF1000,1000_QL80_.jpg" alt="Product 2">
+    <div class="product-details">
+      <div class="product-title">Nothing Phone 2</div>
+      <div class="product-description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <div class="product-price">Rs.32000</div>
+    </div>
+  </div>
+
+   
+
+  <!-- Add more product cards as needed -->
+
+</div>
+
+</body>
+</html>
+

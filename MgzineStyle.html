@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Magazine</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .cover {
+      background-image: url('https://1.bp.blogspot.com/-JOEeCPB-ZVU/WT0JKzaR78I/AAAAAAAAFQk/DVFlcNplsfALpoM2Gbd0x90SpK90aFgRgCLcB/s1600/11_06_2017_102_005.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .featured-articles {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .featured-article {
+      flex: 1;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+    }
+
+    .featured-article img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .featured-article-content {
+      padding: 20px;
+    }
+
+    .regular-articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .regular-article {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .regular-article img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .regular-article-content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mahindra Magazine</h1>
+  </header>
+
+  <main>
+
+    <section class="cover">
+     
+    </section>
+
+    <section class="featured-articles">
+      <div class="featured-article">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.XkB5bUaMngOFvBxAlTGfmgHaE6&pid=Api&P=0&h=180" alt="Featured Article 1">
+        <div class="featured-article-content">
+          <h2>MAHINDRA XUV 7OO</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+      <div class="featured-article">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.J2eZhKf62SIU5h9ySXtizAHaE8&pid=Api&P=0&h=180" alt="Featured Article 2">
+        <div class="featured-article-content">
+          <h2>MAHINDRA THAR</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="regular-articles">
+      <div class="regular-article">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.g9wjcawUFVpTdXqNuycgUQHaEK&pid=Api&P=0&h=180" alt="Article 1">
+        <div class="regular-article-content">
+          <h2>MAHINDRA XUV 3OO</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+      <div class="regular-article">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.9hPbGMTVFzWXIxfZfozwBwHaEo&pid=Api&P=0&h=180" alt="Article 2">
+        <div class="regular-article-content">
+          <h2>MAHINDRA TUV 3OO</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+      <div class="regular-article">
+        <img src="https://img-ik.cars.co.za/images/2016/8/Mahindra-Scorpio/tr:n-news_1200x/scorpio_017_1800x1800.jpg" alt="Article 2">
+        <div class="regular-article-content">
+          <h2>MAHINDRA SCORPIO </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

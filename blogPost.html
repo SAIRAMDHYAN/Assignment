@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <style>
+        body{
+            border: 2px solid black;
+            margin: 20px;
+            
+        }
+         
+        .container {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .column1 {
+            flex: 0 1 70%;
+            box-sizing: border-box;
+        }
+        .column2{
+            flex: 0 1 30%; 
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .column img {
+            width: 100%;
+            height: auto;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body >
+    <div style="border-bottom:5px solid dimgray ;">
+        <div style="height:100px; border-bottom: 5px solid dimgray; padding: 10px 30px;">
+           <p> Title:Dhoni life </p>
+           <p>Date:26 December 2022</p>
+           <p>Author name:Mishra, Rashmi</p>
+            </div>
+         <div class="container">
+          <div class="column1">
+              <img style="padding-left: 50px;" src="data:image/jpeg;base64,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" alt="Your Image">
+          </div>
+          <div class="column2">
+            <h1>Mahendra <br>Singh <br>Dhoni </h1>
+          </div>
+      </div>
+      
+      <div class="container">
+
+        <div class="column1">
+            <p>Mahendra Singh Dhoni ( born 7 July 1981) is an Indian professional cricketer. He is a right handed batter and a wicket-keeper. Widely regarded as one of the most prolific wicket-keeper-batsmen and captains, he represented the Indian cricket team and was the captain of the side in limited-overs formats from 2007 to 2017 and in test cricket from 2008 to 2014.
+                Dhoni has captained the most international matches and is the most successful Indian captain with wins in the 2007 ICC World Twenty20, the 2011 Cricket World Cup, the 2013 ICC Champions Trophy and the Asia Cup in 2010, 2016 and 2018. He plays for and captains Chennai Super Kings in the Indian Premier League (IPL).</p>
+           
+            <p>Born in Ranchi, Dhoni made his first class debut for Bihar in 1999. He made his debut for the Indian cricket team on 23 December 2004 in an ODI against Bangladesh and played his first test a year later against Sri Lanka. In 2007, he became the captain of the ODI side before taking over in all formats by 2008. Dhoni retired from test cricket in 2014,
+                 but continued playing in limited overs cricket till 2019. He has scored 17,266 runs in international cricket including 10,000 plus runs at an average of more than 50 in ODIs.</p>
+            
+            <p>Dhoni plays for Chennai Super Kings in the IPL, leading them to the final on ten occasions and winning it five times (2010, 2011, 2018, 2021 and 2023). He has also led CSK to two Champions League T20 titles in 2010 and 2014. He is amongst the few batsmen to have 
+                scored more than five thousand runs in the IPL, as well as being the first wicket-keeper to do so.</p>
+        
+            </div>
+
+        <div class="column2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QHZ__x_Bj6m2V4zlayZAAULZ6qVFn4Jo_A&usqp=CAU" alt="Your Image" width="100%" height="400px" style="padding-left:50px;">
+        </div>
+        
+            </div>
+        </div>
+      <div>
+        <textarea cols="160" rows="5" placeholder="Enter a Message"></textarea>
+    </div>
+</body>
+</html>
