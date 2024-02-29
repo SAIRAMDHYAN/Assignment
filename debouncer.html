@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debouncing</title>
+</head>
+<body>
+    <img id='image' src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-james-wheeler-414612.jpg&fm=jpg" alt="" width="200px">
+
+    <div id="div">hello</div>
+
+
+    <!-- Debouncing -->
+<script>
+    let image=document.getElementById('image')
+let div=document.getElementById('div')
+let debounceTimer;
+image.addEventListener('click',function print(){
+clearTimeout(debounceTimer)
+
+
+debounceTimer=setTimeout(function(){
+    let list=document.createElement('li')
+list.innerHTML+='Debouncing'
+    div.appendChild(list)
+},2000)
+// div.innerHTML+='hello'
+})
+</script>
+</body>
+</html>
