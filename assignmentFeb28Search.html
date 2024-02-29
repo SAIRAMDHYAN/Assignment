@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debouncing Search</title>
+  <style>
+    #searchInput {
+      width: 300px;
+      padding: 8px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Debouncing Search</h1>
+<input type="text" id="searchInput" placeholder="Search">
+
+<script>
+
+  function debounce(func, delay) {
+    let timeoutId;
+    return function() {
+      const context = this;
+      const args = arguments;
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        func.apply(context, args);
+      }, delay);
+    };
+  }
+
+ 
+  function performSearch(query) {
+    console.log("Searching for:", query);
+    
+  }
+
+ 
+  const searchInput = document.getElementById('searchInput');
+
+  searchInput.addEventListener('input', debounce(function() {
+    const query = searchInput.value;
+    performSearch(query);
+  }, 500)); 
+</script>
+
+</body>
+</html>
